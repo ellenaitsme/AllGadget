@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <title>Register | AllGadget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleRegisterPage.css">
+    <script src="ScriptRegister.js" defer></script>
+    <script src="ScriptHamburger.js" defer></script>
+    
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a href="HomePage.html"><img src="images\Logo.png" alt="Logo" class="navbar-logo"></a></div>
+            <ul class="links">
+                <li><a href="HomePage.html" >Home</a></li>
+                <li><a href="GalleryPage.html" >Gallery</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
+                <li><a href="FindUsPage.html">Find Us</a></li>
+            </ul>
+            <a href="RegisterPage.html" class="action-button" class="active">Register</a>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown-menu">
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="GalleryPage.html">Gallery</a></li>
+            <li><a href="AboutUsPage.html">About Us</a></li>
+            <li><a href="FindUsPage.html">Find Us</a></li>
+            <li><a href="RegisterPage.html" class="action-button">Register</a></li>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="register-content">
+            <h2>REGISTER FOR FREE</h2>
+            <h1>Create New Account</h1>
+            <form action="" class="register-form">
+                <input type="text" name="name" class="type-input" id="name" placeholder="Full Name" >
+                <br>
+
+                <div class="gender">
+                    <label for="gender">Gender</label>
+                    
+                    <div class="gender-option-container"><input type="radio" name="gender" class="gender-option" id="female">Female</div>
+                    <div class="gender-option-container"><input type="radio" name="gender" class="gender-option" id="male">Male</div>
+                    <div class="gender-option-container"> <input type="radio" name="gender" class="gender-option" id="other">Prefer Not to Say</div>
+                    <br>
+                </div>
+                
+
+                <input type="number" name="phonenumber" class="type-input" id="phonenumber" placeholder="Phone Number">
+                <br>
+
+                <input type="email" name="email" class="type-input" id="email" placeholder="Email Address">
+                <br>
+
+                <input type="password" name="password" class="type-input" id="password" placeholder="Password">
+                <br>
+
+                <div class="terms-condition">
+                    <input type="checkbox" name="checkbox" id = "checkbox">
+                    <label for="checkbox">I agree to the terms and condition and the privacy policy</label>
+                </div>
+                
+                <br>
+
+                <button type="submit" onclick = "validateForm(event)">Register</button>   
+            </form>
+        </div>
+    </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div class="company-information">
+                    <img src="images\Logo.png" alt="logo" class="company-logo">
+                    <p class="information">Discover the world of tech at AllGadget, where innovation meets convenience. Explore our extensive collection of gadgets, available both in-store and online, and embrace the future of technology.</p>
+                    <p class="quotes">Unleash limitless innovation and boundless possibilities.</p>
+                </div>
+                    
+                <div class="footer-content" id="contact-form-container">
+                    <h4>Contact Form</h4>
+                    <form action="#" class="contact-fill">
+                        <input class="input-field" type="text" name="Name" id="name" placeholder="Name">
+                        <input class="input-field" type="email" name="email" id="email" placeholder="Email">
+                        <textarea class="input-field" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="footer-content" id="social-media-container">
+                    <h4>Connect with Us!</h4>
+                    <div class="social-media">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="images/Instagram.png" alt="Instagram Logo" class="social-media-logo">
+                            <p>@AllGadget</p>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://twitter.com/" target="_blank">
+                            <img src="images/Twitter.png" alt="Twitter Logo" class="social-media-logo">
+                            <p>@AllGadgetTwt</p>
+                        </a>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="images/YouTube.png" alt="YouTube Logo" class="social-media-logo" id="YouTube">
+                            <p>All About All Gadget</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="copyright">&copy;ALLGADGET, 2023. ALL RIGHTS RESERVED</p>
+
+        </footer>
+
+</body>
+</html>
